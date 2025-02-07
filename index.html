@@ -31,90 +31,86 @@
     <script>
         // お城の情報を配列で定義
         const castles = [
-            {
-    name: "姫路城",
-    description: "姫路城は、兵庫県姫路市にある日本の城で、世界文化遺産にも登録されています。別名は白鷺城（しらさぎじょう）。",
-    mapLink: "https://www.google.com/maps?q=姫路城"
-},
-{
-    name: "松本城",
-    description: "松本城は、長野県松本市にある日本の城で、現存する五大名城のひとつです。",
-    mapLink: "https://www.google.com/maps?q=松本城"
-},
-{
-    name: "大阪城",
-    description: "大阪城は、大阪市に位置する日本の名城で、豊臣秀吉の築城により有名です。",
-    mapLink: "https://www.google.com/maps?q=大阪城"
-},
+            
 {
     name: "名古屋城",
-    description: "名古屋城は、愛知県名古屋市にある日本の城で、金鯱（きんしゃち）で知られています。",
+    description: "名古屋城は、愛知県名古屋市にあり、徳川家の本拠地として有名です。",
     mapLink: "https://www.google.com/maps?q=名古屋城"
 },
 {
-    name: "岐阜城",
-    description: "岐阜城は、岐阜市に位置するお城で、織田信長の居城として有名です。",
-    mapLink: "https://www.google.com/maps?q=岐阜城"
+    name: "高松城",
+    description: "高松城は、香川県高松市にある城で、美しい庭園とともに観光名所としても知られています。",
+    mapLink: "https://www.google.com/maps?q=高松城"
 },
 {
-    name: "高知城",
-    description: "高知城は、高知県高知市にある城で、日本の城郭の中でも現存天守がある数少ない城の一つです。",
-    mapLink: "https://www.google.com/maps?q=高知城"
-},
-{
-    name: "犬山城",
-    description: "犬山城は、愛知県犬山市にある現存天守を持つ城で、国宝に指定されています。",
-    mapLink: "https://www.google.com/maps?q=犬山城"
-},
-{
-    name: "千代田城",
-    description: "千代田城は、東京都千代田区にある歴史的な城で、江戸城跡地に築かれました。",
-    mapLink: "https://www.google.com/maps?q=千代田城"
-},
-{
-    name: "福山城",
-    description: "福山城は、広島県福山市に位置する城で、美しい石垣や天守が特徴です。",
-    mapLink: "https://www.google.com/maps?q=福山城"
-},
-{
-    name: "盛岡城",
-    description: "盛岡城は、岩手県盛岡市にあるお城で、城跡には岩手の歴史を感じることができます。",
-    mapLink: "https://www.google.com/maps?q=盛岡城"
+    name: "福井城",
+    description: "福井城は、福井県福井市に位置し、戦国時代の名城の一つです。",
+    mapLink: "https://www.google.com/maps?q=福井城"
 },
 {
     name: "和歌山城",
-    description: "和歌山城は、和歌山県和歌山市にある日本の城で、美しい城郭が魅力です。",
+    description: "和歌山城は、和歌山県和歌山市にあり、紀州藩の城として知られています。",
     mapLink: "https://www.google.com/maps?q=和歌山城"
 },
 {
-    name: "宇和島城",
-    description: "宇和島城は、愛媛県宇和島市にある城で、天守閣が非常に美しく、日本の名城に数えられています。",
-    mapLink: "https://www.google.com/maps?q=宇和島城"
+    name: "熊本城",
+    description: "熊本城は、熊本県熊本市にあり、明治時代まで熊本藩の中心だった城です。",
+    mapLink: "https://www.google.com/maps?q=熊本城"
 },
 {
-    name: "甲府城",
-    description: "甲府城は、山梨県甲府市に位置し、武田信玄が築いた城として有名です。",
-    mapLink: "https://www.google.com/maps?q=甲府城"
+    name: "明石城",
+    description: "明石城は、兵庫県明石市にあるお城で、その美しい天守閣が魅力です。",
+    mapLink: "https://www.google.com/maps?q=明石城"
 },
 {
-    name: "今治城",
-    description: "今治城は、愛媛県今治市にある城で、海上に浮かぶような美しい天守が特徴です。",
-    mapLink: "https://www.google.com/maps?q=今治城"
+    name: "彦根城",
+    description: "彦根城は、滋賀県彦根市にあり、江戸時代の建築様式を残す重要な文化財です。",
+    mapLink: "https://www.google.com/maps?q=彦根城"
 },
 {
-    name: "新発田城",
-    description: "新発田城は、新潟県新発田市にあり、戦国時代の城として知られています。",
-    mapLink: "https://www.google.com/maps?q=新発田城"
+    name: "岡崎城",
+    description: "岡崎城は、愛知県岡崎市にあるお城で、家康の生誕地としても知られています。",
+    mapLink: "https://www.google.com/maps?q=岡崎城"
 },
 {
-    name: "岡山城",
-    description: "岡山城は、岡山県岡山市にあり、別名「烏城（からすじょう）」と呼ばれています。",
-    mapLink: "https://www.google.com/maps?q=岡山城"
+    name: "青梅城",
+    description: "青梅城は、東京都青梅市に位置し、美しい石垣が特徴的な城跡です。",
+    mapLink: "https://www.google.com/maps?q=青梅城"
 },
 {
-    name: "八王子城",
-    description: "八王子城は、東京都八王子市にあり、戦国時代に築かれた歴史的な城です。",
-    mapLink: "https://www.google.com/maps?q=八王子城"
+    name: "遠山城",
+    description: "遠山城は、長野県飯田市にあり、遠山氏の拠点として築かれた歴史的な城です。",
+    mapLink: "https://www.google.com/maps?q=遠山城"
+},
+{
+    name: "吉野ヶ里遺跡",
+    description: "吉野ヶ里遺跡は、佐賀県にあり、古代の集落跡とともに城の遺構も見られます。",
+    mapLink: "https://www.google.com/maps?q=吉野ヶ里遺跡"
+},
+{
+    name: "佐賀城",
+    description: "佐賀城は、佐賀県佐賀市に位置し、佐賀藩の城として重要な役割を果たしました。",
+    mapLink: "https://www.google.com/maps?q=佐賀城"
+},
+{
+    name: "大垣城",
+    description: "大垣城は、岐阜県大垣市にある城で、戦国時代の名残を残す遺構が点在しています。",
+    mapLink: "https://www.google.com/maps?q=大垣城"
+},
+{
+    name: "大阪城",
+    description: "大阪城は、大阪府大阪市にあり、豊臣秀吉が築いた名城として有名です。",
+    mapLink: "https://www.google.com/maps?q=大阪城"
+},
+{
+    name: "諏訪城",
+    description: "諏訪城は、長野県諏訪市にあり、諏訪氏の本拠地として重要な役割を果たしました。",
+    mapLink: "https://www.google.com/maps?q=諏訪城"
+},
+{
+    name: "伊賀上野城",
+    description: "伊賀上野城は、三重県伊賀市にあり、伊賀忍者の拠点としても有名です。",
+    mapLink: "https://www.google.com/maps?q=伊賀上野城"
 },
 {
     name: "姫路城",
@@ -122,120 +118,245 @@
     mapLink: "https://www.google.com/maps?q=姫路城"
 },
 {
-    name: "平泉の毛越寺",
-    description: "平泉の毛越寺は、岩手県平泉町にある世界遺産に登録された寺院で、その美しい庭園が有名です。",
-    mapLink: "https://www.google.com/maps?q=平泉の毛越寺"
-},
-{
-    name: "白河小峰城",
-    description: "白河小峰城は、福島県白河市に位置し、桜が美しいお城として知られています。",
-    mapLink: "https://www.google.com/maps?q=白河小峰城"
-},
-{
-    name: "松前城",
-    description: "松前城は、北海道松前町に位置する城で、北の名城として知られています。",
-    mapLink: "https://www.google.com/maps?q=松前城"
-},
-{
-    name: "長浜城",
-    description: "長浜城は、滋賀県長浜市にある城で、湖に面した美しい景観が魅力です。",
-    mapLink: "https://www.google.com/maps?q=長浜城"
-},
-{
-    name: "大分城",
-    description: "大分城は、大分県大分市にあり、戦国時代の城としてその歴史的価値が高いです。",
-    mapLink: "https://www.google.com/maps?q=大分城"
-},
-{
-    name: "高田城",
-    description: "高田城は、新潟県上越市に位置し、戦国時代に築かれたお城です。",
-    mapLink: "https://www.google.com/maps?q=高田城"
-},
-{
-    name: "弘前城",
-    description: "弘前城は、青森県弘前市にあり、桜の名所としても有名です。",
-    mapLink: "https://www.google.com/maps?q=弘前城"
-},
-{
-    name: "湯沢城",
-    description: "湯沢城は、秋田県湯沢市にあるお城で、歴史的にも重要な役割を果たしました。",
-    mapLink: "https://www.google.com/maps?q=湯沢城"
-},
-{
-    name: "福井城",
-    description: "福井城は、福井県福井市に位置する城で、天守が再建されている美しい城です。",
-    mapLink: "https://www.google.com/maps?q=福井城"
-},
-{
-    name: "駿府城",
-    description: "駿府城は、静岡県静岡市にある城で、徳川家康の居城としても有名です。",
-    mapLink: "https://www.google.com/maps?q=駿府城"
-},
-{
-    name: "城端城",
-    description: "城端城は、富山県南砺市にある城で、その美しい景観が特徴です。",
-    mapLink: "https://www.google.com/maps?q=城端城"
-},
-{
-    name: "山形城",
-    description: "山形城は、山形県山形市にあるお城で、その美しい石垣が特徴です。",
-    mapLink: "https://www.google.com/maps?q=山形城"
-},
-{
     name: "水戸城",
-    description: "水戸城は、茨城県水戸市に位置し、梅の名所としても有名です。",
+    description: "水戸城は、茨城県水戸市にあり、水戸藩の本拠地として知られています。",
     mapLink: "https://www.google.com/maps?q=水戸城"
 },
 {
-    name: "彦根城",
-    description: "彦根城は、滋賀県彦根市にあり、国宝に指定された天守が特徴の美しい城です。",
-    mapLink: "https://www.google.com/maps?q=彦根城"
+    name: "奈良市の城",
+    description: "奈良市には、かつての奈良時代の城や城跡が点在しており、歴史的な観光地です。",
+    mapLink: "https://www.google.com/maps?q=奈良市の城"
 },
 {
-    name: "尾道城",
-    description: "尾道城は、広島県尾道市にあるお城で、美しい海岸線に面した城です。",
-    mapLink: "https://www.google.com/maps?q=尾道城"
+    name: "堺市の城",
+    description: "堺市には、戦国時代に重要な役割を果たした城跡がいくつかあります。",
+    mapLink: "https://www.google.com/maps?q=堺市の城"
 },
 {
-    name: "堺城",
-    description: "堺城は、大阪府堺市にあり、戦国時代に築かれた歴史的な城です。",
-    mapLink: "https://www.google.com/maps?q=堺城"
+    name: "高松城",
+    description: "高松城は、香川県高松市にある城で、美しい庭園とともに観光名所としても知られています。",
+    mapLink: "https://www.google.com/maps?q=高松城"
+},
+{
+    name: "岐阜城",
+    description: "岐阜城は、岐阜県岐阜市にあり、戦国時代の名城で、織田信長と関連があります。",
+    mapLink: "https://www.google.com/maps?q=岐阜城"
+},
+{
+    name: "新発田城",
+    description: "新発田城は、新潟県新発田市に位置し、戦国時代に築かれた城の跡地です。",
+    mapLink: "https://www.google.com/maps?q=新発田城"
 },
 {
     name: "秋田城",
-    description: "秋田城は、秋田県秋田市に位置し、戦国時代の城として有名です。",
+    description: "秋田城は、秋田県秋田市にあり、城跡とともに美しい自然が広がっています。",
     mapLink: "https://www.google.com/maps?q=秋田城"
 },
 {
-    name: "坂出城",
-    description: "坂出城は、香川県坂出市に位置し、その歴史的価値が高いお城です。",
-    mapLink: "https://www.google.com/maps?q=坂出城"
+    name: "福山城",
+    description: "福山城は、広島県福山市にあり、江戸時代に築かれた城です。",
+    mapLink: "https://www.google.com/maps?q=福山城"
 },
 {
-    name: "浜田城",
-    description: "浜田城は、島根県浜田市にあるお城で、戦国時代の城として知られています。",
-    mapLink: "https://www.google.com/maps?q=浜田城"
+    name: "熊本城",
+    description: "熊本城は、熊本県熊本市にあり、江戸時代の名城です。",
+    mapLink: "https://www.google.com/maps?q=熊本城"
 },
 {
-    name: "長崎城",
-    description: "長崎城は、長崎県長崎市に位置し、美しい城跡が魅力的です。",
-    mapLink: "https://www.google.com/maps?q=長崎城"
+    name: "平戸城",
+    description: "平戸城は、長崎県平戸市にあり、戦国時代の城として有名です。",
+    mapLink: "https://www.google.com/maps?q=平戸城"
 },
 {
-    name: "佐賀城",
-    description: "佐賀城は、佐賀県佐賀市にあるお城で、城跡が保存されています。",
-    mapLink: "https://www.google.com/maps?q=佐賀城"
+    name: "高岡城",
+    description: "高岡城は、富山県高岡市にあり、加賀藩の城として栄えました。",
+    mapLink: "https://www.google.com/maps?q=高岡城"
 },
 {
-    name: "鹿児島城",
-    description: "鹿児島城は、鹿児島県鹿児島市にあるお城で、その大きな城跡が特徴です。",
-    mapLink: "https://www.google.com/maps?q=鹿児島城"
+    name: "長浜城",
+    description: "長浜城は、滋賀県長浜市にあり、豊臣秀吉の命で築かれました。",
+    mapLink: "https://www.google.com/maps?q=長浜城"
+},
+{
+    name: "鳥取城",
+    description: "鳥取城は、鳥取県鳥取市にあり、鳥取藩の本拠地として重要でした。",
+    mapLink: "https://www.google.com/maps?q=鳥取城"
+},
+{
+    name: "三原城",
+    description: "三原城は、広島県三原市にあり、戦国時代の城です。",
+    mapLink: "https://www.google.com/maps?q=三原城"
+},
+{
+    name: "徳島城",
+    description: "徳島城は、徳島県徳島市にあり、阿波藩の拠点として知られています。",
+    mapLink: "https://www.google.com/maps?q=徳島城"
 },
 {
     name: "小田原城",
-    description: "小田原城は、神奈川県小田原市にあるお城で、戦国時代に築かれた歴史的な名城です。",
+    description: "小田原城は、神奈川県小田原市にあり、北条氏の本拠地でした。",
     mapLink: "https://www.google.com/maps?q=小田原城"
-}
+},
+{
+    name: "出雲大社",
+    description: "出雲大社は、島根県出雲市にあり、城跡としての遺構も見られます。",
+    mapLink: "https://www.google.com/maps?q=出雲大社"
+},
+{
+    name: "久留米城",
+    description: "久留米城は、福岡県久留米市にあり、筑後藩の本拠地でした。",
+    mapLink: "https://www.google.com/maps?q=久留米城"
+},
+{
+    name: "福井城",
+    description: "福井城は、福井県福井市にあり、戦国時代に築かれた城です。",
+    mapLink: "https://www.google.com/maps?q=福井城"
+},
+{
+    name: "浜松城",
+    description: "浜松城は、静岡県浜松市にあり、徳川家康が築いた城です。",
+    mapLink: "https://www.google.com/maps?q=浜松城"
+},
+{
+    name: "長岡城",
+    description: "長岡城は、新潟県長岡市にあり、戦国時代の城跡として有名です。",
+    mapLink: "https://www.google.com/maps?q=長岡城"
+},
+{
+    name: "加賀藩",
+    description: "加賀藩の拠点として栄えた加賀城（石川県）の遺構も観光地となっています。",
+    mapLink: "https://www.google.com/maps?q=加賀藩"
+},
+{
+    name: "龍野城",
+    description: "龍野城は、兵庫県たつの市にあり、江戸時代の城跡です。",
+    mapLink: "https://www.google.com/maps?q=龍野城"
+},
+{
+    name: "岐阜城",
+    description: "岐阜城は、岐阜県岐阜市にあり、織田信長の拠点としても知られています。",
+    mapLink: "https://www.google.com/maps?q=岐阜城"
+},
+{
+    name: "上田城",
+    description: "上田城は、長野県上田市にあり、真田家の本拠地として有名です。",
+    mapLink: "https://www.google.com/maps?q=上田城"
+},
+{
+    name: "佐賀城",
+    description: "佐賀城は、佐賀県佐賀市に位置し、佐賀藩の城として重要な役割を果たしました。",
+    mapLink: "https://www.google.com/maps?q=佐賀城"
+},
+{
+    name: "郡山城",
+    description: "郡山城は、奈良県郡山市にあり、奈良時代の名城として知られています。",
+    mapLink: "https://www.google.com/maps?q=郡山城"
+},            
+    {
+    name: "彦根城",
+    description: "彦根城は、滋賀県彦根市にあり、井伊家の拠点として知られています。",
+    mapLink: "https://www.google.com/maps?q=彦根城"
+},
+{
+    name: "金沢城",
+    description: "金沢城は、石川県金沢市にあり、加賀藩の本拠地として栄えました。",
+    mapLink: "https://www.google.com/maps?q=金沢城"
+},
+{
+    name: "甲府城",
+    description: "甲府城は、山梨県甲府市にあり、甲府藩の拠点として重要でした。",
+    mapLink: "https://www.google.com/maps?q=甲府城"
+},
+{
+    name: "鳥羽城",
+    description: "鳥羽城は、三重県鳥羽市にあり、伊勢藩の城として栄えました。",
+    mapLink: "https://www.google.com/maps?q=鳥羽城"
+},
+{
+    name: "高松城",
+    description: "高松城は、香川県高松市にあり、讃岐藩の拠点として栄えました。",
+    mapLink: "https://www.google.com/maps?q=高松城"
+},
+{
+    name: "今治城",
+    description: "今治城は、愛媛県今治市にあり、今治藩の本拠地として栄えました。",
+    mapLink: "https://www.google.com/maps?q=今治城"
+},
+{
+    name: "甲府藩",
+    description: "甲府藩の拠点であった甲府城をはじめ、甲府藩の城の一部遺構が観光地となっています。",
+    mapLink: "https://www.google.com/maps?q=甲府藩"
+},
+{
+    name: "福岡城",
+    description: "福岡城は、福岡県福岡市にあり、福岡藩の拠点として栄えました。",
+    mapLink: "https://www.google.com/maps?q=福岡城"
+},
+{
+    name: "八王子城",
+    description: "八王子城は、東京都八王子市にあり、戦国時代に築かれた城です。",
+    mapLink: "https://www.google.com/maps?q=八王子城"
+},
+{
+    name: "韮山城",
+    description: "韮山城は、静岡県伊豆の国市にあり、戦国時代の名城として有名です。",
+    mapLink: "https://www.google.com/maps?q=韮山城"
+},
+{
+    name: "佐倉城",
+    description: "佐倉城は、千葉県佐倉市にあり、佐倉藩の拠点として知られています。",
+    mapLink: "https://www.google.com/maps?q=佐倉城"
+},
+{
+    name: "高崎城",
+    description: "高崎城は、群馬県高崎市にあり、高崎藩の本拠地として栄えました。",
+    mapLink: "https://www.google.com/maps?q=高崎城"
+},
+{
+    name: "小田原城",
+    description: "小田原城は、神奈川県小田原市にあり、北条氏の本拠地でした。",
+    mapLink: "https://www.google.com/maps?q=小田原城"
+},
+{
+    name: "柳川城",
+    description: "柳川城は、福岡県柳川市にあり、柳川藩の拠点として栄えました。",
+    mapLink: "https://www.google.com/maps?q=柳川城"
+},
+{
+    name: "松本城",
+    description: "松本城は、長野県松本市にあり、戦国時代の名城として有名です。",
+    mapLink: "https://www.google.com/maps?q=松本城"
+},
+{
+    name: "金山城",
+    description: "金山城は、岐阜県恵那市にあり、戦国時代に栄えた城です。",
+    mapLink: "https://www.google.com/maps?q=金山城"
+},
+{
+    name: "備中松山城",
+    description: "備中松山城は、岡山県高梁市にあり、現存する天守を有する日本の名城です。",
+    mapLink: "https://www.google.com/maps?q=備中松山城"
+},
+{
+    name: "安土城",
+    description: "安土城は、滋賀県近江八幡市にあり、織田信長の本拠地として有名です。",
+    mapLink: "https://www.google.com/maps?q=安土城"
+},
+{
+    name: "太宰府天満宮",
+    description: "太宰府天満宮は、福岡県太宰府市にあり、学問の神様として親しまれています。",
+    mapLink: "https://www.google.com/maps?q=太宰府天満宮"
+},
+{
+    name: "福知山城",
+    description: "福知山城は、京都府福知山市にあり、丹波福知山藩の拠点として栄えました。",
+    mapLink: "https://www.google.com/maps?q=福知山城"
+},
+{
+    name: "岩国城",
+    description: "岩国城は、山口県岩国市にあり、岩国藩の本拠地として知られています。",
+    mapLink: "https://www.google.com/maps?q=岩国城"
+}        
             // 追加のお城情報はここに挿入できます。
         ];
 
