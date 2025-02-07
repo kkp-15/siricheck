@@ -4,25 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>今日のお城</title>
-    <script>
-        // ここにお城の情報を追加します
-        const castles = [
-            { name: "弘前城", description: "青森県、桜の名所としても有名な城。", map: "https://goo.gl/maps/g8TAYp7XUHP2" },
-            { name: "盛岡城", description: "岩手県、現存する石垣が見どころ。", map: "https://goo.gl/maps/CkNzL3AFd7o" },
-            // 他のお城の情報をここに追加
-        ];
-
-        // ランダムにお城を選んで表示する関数
-        function showCastle() {
-            const randomIndex = Math.floor(Math.random() * castles.length);
-            const castle = castles[randomIndex];
-
-            // HTML要素に情報を表示
-            document.getElementById('castle-name').innerText = castle.name;
-            document.getElementById('castle-description').innerText = castle.description;
-            document.getElementById('castle-map-link').innerHTML = `<a href="${castle.map}" target="_blank">地図リンク</a>`;
+    <style>
+        /* スタイルの例（任意で追加できます） */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
         }
-    </script>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
 </head>
 <body>
     <h1>今日のお城</h1>
@@ -30,5 +27,43 @@
     <h2 id="castle-name"></h2>
     <p id="castle-description"></p>
     <p id="castle-map-link"></p>
+
+    <script>
+        // お城の情報を配列で定義
+        const castles = [
+            {
+                name: "姫路城",
+                description: "姫路城は、兵庫県姫路市にある日本の城で、世界文化遺産にも登録されています。別名は白鷺城（しらさぎじょう）。",
+                mapLink: "https://goo.gl/maps/QugCxMjft9QkzzHt5"
+            },
+            {
+                name: "松本城",
+                description: "松本城は、長野県松本市にある日本の城で、現存する五大名城のひとつです。",
+                mapLink: "https://goo.gl/maps/ZHPRhrjXdxPp39uA6"
+            },
+            {
+                name: "大阪城",
+                description: "大阪城は、大阪市に位置する日本の名城で、豊臣秀吉の築城により有名です。",
+                mapLink: "https://goo.gl/maps/tnnt1zyZ9eB2"
+            },
+            {
+                name: "名古屋城",
+                description: "名古屋城は、愛知県名古屋市にある日本の城で、金鯱（きんしゃち）で知られています。",
+                mapLink: "https://goo.gl/maps/5vWBkFL1geTz4N8T9"
+            }
+            // 追加のお城情報はここに挿入できます。
+        ];
+
+        // お城をランダムに表示する関数
+        function showCastle() {
+            const randomIndex = Math.floor(Math.random() * castles.length); // ランダムなインデックスを生成
+            const selectedCastle = castles[randomIndex]; // ランダムに選ばれたお城の情報を取得
+
+            // HTMLにお城の情報を表示
+            document.getElementById("castle-name").innerText = selectedCastle.name;
+            document.getElementById("castle-description").innerText = selectedCastle.description;
+            document.getElementById("castle-map-link").innerHTML = `<a href="${selectedCastle.mapLink}" target="_blank">地図リンク</a>`;
+        }
+    </script>
 </body>
 </html>
